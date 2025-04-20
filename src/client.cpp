@@ -73,19 +73,19 @@ void API_IP::getResponse(const std::string &ip) {
 }
 
 void API_IP::log() {
-  std::cout << "[IP]\t" << ip << std::endl;
-  std::cout << "[STATUS]\t" << status << std::endl;
-  std::cout << "[COUNTRY]\t" << country << std::endl;
+  std::cout << "[IP]          \t" << ip << std::endl;
+  std::cout << "[STATUS]      \t" << status << std::endl;
+  std::cout << "[COUNTRY]     \t" << country << std::endl;
   std::cout << "[COUNTRY CODE]\t" << countryCode << std::endl;
-  std::cout << "[REGION]\t" << region << std::endl;
-  std::cout << "[REGION NAME]\t" << regionName << std::endl;
-  std::cout << "[CITY]\t" << city << std::endl;
-  std::cout << "[ZIP CODE]\t" << zipcode << std::endl;
-  std::cout << "[LAT]\t" << lat << std::endl;
-  std::cout << "[LON]\t" << lon << std::endl;
-  std::cout << "[TIME ZONE]\t" << timezone << std::endl;
-  std::cout << "[ISP]\t" << isp << std::endl;
-  std::cout << "[ORG]\t" << org << std::endl;
-  std::cout << "[AS]\t" << as << std::endl;
+  std::cout << "[REGION]      \t" << region << std::endl;
+  std::cout << "[REGION NAME] \t" << regionName << std::endl;
+  std::cout << "[CITY]        \t" << city << std::endl;
+  std::cout << "[ZIP CODE]    \t" << zipcode << std::endl;
+  std::cout << "[LAT]         \t" << lat << std::endl;
+  std::cout << "[LON]         \t" << lon << std::endl;
+  std::cout << "[TIME ZONE]   \t" << timezone << std::endl;
+  std::cout << "[ISP]         \t" << isp << std::endl;
+  std::cout << "[ORG]         \t" << org << std::endl;
+  std::cout << "[AS]          \t" << as << std::endl;
 }
 } // namespace dumper

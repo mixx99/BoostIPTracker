@@ -16,7 +16,8 @@ int main() {
   } catch (std::exception &exception) {
     std::cerr << exception.what() << std::endl;
   }
-
+#if _WIN32
   system("pause");
+#endif
   return 0;
 }

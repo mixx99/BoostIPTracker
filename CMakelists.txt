@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.14)
+project(ipDumper)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+set(Boost_USE_MULTITHREADED ON)
+
+find_package(Boost COMPONENTS system REQUIRED)
+include_directories(/usr/local/include ${Boost_INCLUDE_DIR})
+
+
+add_executable(ipDumper 
+  src/IP-Dumper.cpp
+  src/client.cpp
+  )
+target_link_libraries(ipDumper ${Boost_LIBRARIES})
